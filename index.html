@@ -6,6 +6,7 @@
     <title>Unity WebGL Player | Prac Game</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+	  <link rel="stylesheet" href="customStyleSheet.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
@@ -17,9 +18,39 @@
       <div id="gameContainer" style="width: 1000px; height: 562px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Prac Game</div>
+        <div class="title"><button id="button-pink" onclick="gameInstance.SetFullscreen(1)">Maximise Game Window</button></div>
       </div>
+				<div style="position: absolute;"> 
+			<h1 style="margin-bottom: 10px; margin-top: 10px;">Basic Physiotherapy Skills Game</h1>
+			<h2>Instructions Below:</h2>
+			<div>
+				<i>Please allow up to several minutes for the game to load. Loading times may be longer using a poor internet connection. The loading file size is roughly 20MB. Please note that the links below may have a delay before loading while the game is still attempting to load.</i>
+				<br>
+				<br>
+				<h2>1. Make sure you have Firefox:</h2>
+				<p id="custom-p">This game will only work properly using the Mozilla Firefox web browser. The game will not work properly using Safari, Internet Explorer, or Chrome.
+				You can download the Firefox broswer here: <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Download Firefox Here</a>
+				</p>
+				<a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank"><button id="button-blue">Download Firefox</button></a>
+				<br>
+				<br>
+				<h2>2. Read instructions carefully</h2>
+				<p id="custom-p">
+					Make sure to read the instructions in the game carefully so you know what to do and how to complete it! 
+				</p>
+				<h2>3. Fill in the survey</h2>
+				<p id="custom-p">
+					Please fill in the survey by clicking the link below: 
+					<br>
+					<a href="https://curtin.au1.qualtrics.com/jfe/form/SV_835xCNdO3Jgw1z7" target="_blank" >Complete Survey</a>
+					If you have trouble with the link, the survey can be found at this URL: https://curtin.au1.qualtrics.com/jfe/form/SV_835xCNdO3Jgw1z, a link to the survey can also be found at the end of the game.
+				</p>
+				<br>
+				<a href="https://curtin.au1.qualtrics.com/jfe/form/SV_835xCNdO3Jgw1z7" target="_blank"><button id="button-yellow">Complete Survey</button></a>
+				<br><br><br>
+			</div>
+		</div>
     </div>
+
   </body>
 </html>
